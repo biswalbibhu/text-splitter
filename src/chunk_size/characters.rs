@@ -15,7 +15,7 @@ pub struct Characters;
 impl ChunkSizer for Characters {
     /// Determine the size of a given chunk to use for validation.
     fn size(&self, chunk: &str) -> usize {
-        chunk.chars().count()
+        chunk.chars()
     }
 }
 
